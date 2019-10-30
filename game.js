@@ -4,7 +4,7 @@ let userPattern = [];
 let launchedGame = false;
 let level = 0;
 
-$(document).keyup(function() {
+$(document).on("keyup touchend",function() {
   if (!launchedGame) {
     $("#level-title").text("level: " + level);
     nextSequence();
@@ -12,7 +12,7 @@ $(document).keyup(function() {
   }
 })
 
-$(".btn").click(function() {
+$(".btn").on("click",function() {
   let clicked = $(this).attr('id');
   clickedButton(clicked);
   playSound(clicked);
