@@ -4,7 +4,7 @@ let userPattern = [];
 let launchedGame = false;
 let level = 0;
 
-$(document).keypress(function() {
+$(document).keyup(function() {
   if (!launchedGame) {
     $("#level-title").text("level: " + level);
     nextSequence();
