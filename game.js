@@ -38,7 +38,7 @@ function nextSequence() {
 }
 
 function playSound(button) {
-  let bip = new Audio(button + ".mp3");
+  let bip = new Audio("sounds/"+button+".mp3");
   bip.play();
 }
 
