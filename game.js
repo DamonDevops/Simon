@@ -31,6 +31,7 @@ function nextSequence() {
     (function(i) {
       setTimeout(function() {
         $("#" + pattern[i]).fadeIn(100).fadeOut(100).fadeIn(100);
+        console.log(pattern[i]);
         playSound(pattern[i]);
       }, 300 * i)
     })(i);
